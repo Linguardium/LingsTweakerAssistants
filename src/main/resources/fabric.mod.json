@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "lingassist",
+  "version": "${version}",
+  "name": "Ling's Tweaker Assistants",
+  "description": "Assortment of LibCD assistants",
+  "authors": [
+    "Linguardium"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/lingassist/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "mod.linguardium.lingassist.LingAssist"
+    ],
+    "client": [],
+    "server": []
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.4.0"
+  }
+}
