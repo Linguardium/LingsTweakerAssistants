@@ -30,11 +30,11 @@ public class UtilAssistant {
         }
         return new Vector3f(r/255.0F,g/255.0F,b/255.0F);
     }
-    public Vector3f colorFromFloat(List<Float> colors) throws CDSyntaxError {
-        float r = Math.max(Math.min(colors.get(0),1),0);
-        float g = Math.max(Math.min(colors.get(0),1),0);
-        float b = Math.max(Math.min(colors.get(0),1),0);
-        if (r!=colors.get(0) || g!=colors.get(1) || b!=colors.get(2)) {
+    public Vector3f colorFromFloat(float[] colors) throws CDSyntaxError {
+        float r = Math.max(Math.min(colors[0],1),0);
+        float g = Math.max(Math.min(colors[1],1),0);
+        float b = Math.max(Math.min(colors[2],1),0);
+        if (r!=colors[0] || g!=colors[1] || b!=colors[2]) {
             throw(new CDSyntaxError("Color value out of range"));
         }
         return new Vector3f(r,g,b);
