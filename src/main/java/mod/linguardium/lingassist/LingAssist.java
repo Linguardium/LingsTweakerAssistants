@@ -3,6 +3,7 @@ package mod.linguardium.lingassist;
 import io.github.cottonmc.libcd.api.tweaker.TweakerManager;
 import mod.linguardium.lingassist.Assistants.ItemStackAssistant;
 import mod.linguardium.lingassist.Assistants.RandomAssistant;
+import mod.linguardium.lingassist.Assistants.UtilAssistant;
 import net.fabricmc.api.ModInitializer;
 
 import org.apache.logging.log4j.Level;
@@ -20,6 +21,7 @@ public class LingAssist implements ModInitializer {
     public void onInitialize() {
         TweakerManager.INSTANCE.addAssistant("lings.ItemStack", ItemStackAssistant.INSTANCE);
         TweakerManager.INSTANCE.addAssistant("lings.Random", RandomAssistant.INSTANCE);
+        TweakerManager.INSTANCE.addAssistant("lings.Util", UtilAssistant.INSTANCE);
         log(Level.INFO, "Linguardium has given you aides");
     }
 
